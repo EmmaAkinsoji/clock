@@ -8,19 +8,35 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="container">
-<div class="clock">
-<div class="lines line1"></div>
-<div class="lines line2"></div>
-<div class="lines line3"></div>
-<div class="lines line4"></div>
+<div class="wrapper">
+<div class="inner-wrapper">
+<button class="light"
+onclick="toggle()">Light Mode</button>
 
-<div class="hand hand-hour"></div>
-<div class="hand hand-min"></div>
-<div class="hand hand-sec"></div>
+    <div class="container" id="container"> 
+    <div class="clock">
 
-<div class="inner"></div>
+        <div class="lines line1"></div>
+        <div class="lines line2"></div>
+        <div class="lines line3"></div>
+        <div class="lines line4"></div>
+
+        <div class="hand hand-hour"></div>
+        <div class="hand hand-min"></div>
+        <div class="hand hand-sec"></div>
+
+    <div class="inner"></div>
+
+    </div>
+    </div>
+    
+<div class="digit">
+<div class="digit-inner" >
+<span class="hr"></span>:<span class="min"></span>:
+<span class="sec"></span> <span class="period"></span>
+</div></div>
 </div>
+<button class="analog" onclick="toDigital()">Digital</button>
 </div>
 <script src="./script.js"></script>   
 </body>
